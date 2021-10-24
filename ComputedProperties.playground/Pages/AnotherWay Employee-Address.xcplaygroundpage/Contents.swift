@@ -2,6 +2,7 @@
 
 import Foundation
 
+
 struct Employee {
   let name: String
   
@@ -39,27 +40,18 @@ struct Employee {
 }
 
 
-var bob = Employee(name: "Bob",
+var anna = Employee(name: "Anna",
                     annualSalary: 6_000,
-                    street: "Alhamra",
+                    street: "Abu Ayyub Al-Ansari",
                     streetNumber: "1413",
                     postalCode: "99321",
                     city: "Tabuk",
                     region: "Tabuk")
 
-print(bob.city)
-print(bob.streetNumber)
+print(anna.city)
+print(anna.streetNumber)
 
-print("The employee address is \(bob.address)")
-
-
-
-    /*:
- - callout(Exercise): Create a new **_Read-Only computed property_** that calculates the properties `street`, `streetNumber`, `city` and `postalCode`. The new **_Read-Only computed property_** is called `address` . This computed propeties contains the following string `"\(street) \(streedNumber) \(postalCode), \(city)"`. Create a new instance of Employee giving in its inicializer all the address information separatelly, and after that, print the employee's address.
- */
+print("The employee address is \(anna.address)")
 
 
-
-
-
-
+//: [Next](@next)
